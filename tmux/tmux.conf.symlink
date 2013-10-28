@@ -32,6 +32,9 @@ bind '-' split-window -v
 
 # use mouse
 setw -g mode-mouse on
+setw -g mouse-resize-pane on
+setw -g mouse-select-pane on
+setw -g mouse-select-window on
 
 # utf8 support
 set-window-option -g utf8 on
