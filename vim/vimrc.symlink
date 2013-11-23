@@ -50,7 +50,12 @@ Bundle 'fholgado/minibufexpl.vim'
 Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-haml'
+Bundle 'slim-template/vim-slim'
+Bundle 'guns/vim-clojure-static'
+Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'tpope/vim-surround'
+Bundle 'vim-scripts/matchit.zip'
+Bundle 'AlexParamonov/vim-ruby-refactoring'
 
 " Uncomment the following to have Vim load indentation rules according to the
 " detected filetype. Per default Debian Vim only load filetype specific
