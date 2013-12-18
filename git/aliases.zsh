@@ -22,3 +22,4 @@ alias gg='git grep'
 
 alias promote='git promote'
 alias preq='git pull-request -m'
+alias ppreq='promote && preq'
