@@ -49,7 +49,6 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'gregsexton/gitv'
 Bundle 'tpope/vim-rails'
 Bundle 'scrooloose/nerdtree'
-Bundle 'fholgado/minibufexpl.vim'
 Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-haml'
@@ -177,18 +176,6 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
-
-""""""""""""""""""""""""""""""
-" => Minibuffer plugin
-""""""""""""""""""""""""""""""
-"let g:miniBufExplModSelTarget = 1
-"let g:miniBufExplorerMoreThanOne = 2
-"let g:miniBufExplModSelTarget = 0
-"let g:miniBufExplUseSingleClick = 1
-"let g:miniBufExplMapWindowNavVim = 1
-"let g:miniBufExplSplitBelow=1
-
-let g:bufExplorerSortBy = "name"
 
 set wildmenu
 
