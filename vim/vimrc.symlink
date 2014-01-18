@@ -61,6 +61,7 @@ Bundle 'AlexParamonov/vim-ruby-refactoring'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'jgdavey/tslime.vim'
+Bundle 'kien/ctrlp.vim'
 
 " Uncomment the following to have Vim load indentation rules according to the
 " detected filetype. Per default Debian Vim only load filetype specific
@@ -230,10 +231,20 @@ au Syntax * RainbowParenthesesLoadBraces
 let g:rspec_command = 'call Send_to_Tmux("zeus rspec {spec}\n")'
 
 " vim-rspec mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>c :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 " auto-source .vimrc
 autocmd! bufwritepost .vimrc source %
+
+" CtrlP familiar to Command-T
+silent! nnoremap <unique> <silent> <Leader>t :CtrlP<CR>
+
+" CtrlP for buffers
+" silent! nnoremap <unique> <silent> <Leader>b :CtrlPBuffer<CR>
+" CtrlP for tags
+" silent! nnoremap <unique> <silent> <Leader>T :CtrlPTag<CR>
+" CtrlP for filetype
+" silent! nnoremap <unique> <silent> <Leader>f :CtrlPFiletype<CR>
