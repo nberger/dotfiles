@@ -16,11 +16,7 @@ let mapleader = "-"
 " Uncomment the next line to make Vim more Vi-compatible
 " NOTE: debian.vim sets 'nocompatible'.  Setting 'compatible' changes numerous
 " options, so any other options should be set AFTER setting 'compatible'.
-"set compatible
-
-" Vim5 and later versions support syntax highlighting. Uncommenting the next
-" line enables syntax highlighting by default.
-syntax on
+set nocompatible
 
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
@@ -62,6 +58,9 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'jgdavey/tslime.vim'
 Bundle 'kien/ctrlp.vim'
+
+syntax on
+filetype off
 
 " Uncomment the following to have Vim load indentation rules according to the
 " detected filetype. Per default Debian Vim only load filetype specific
