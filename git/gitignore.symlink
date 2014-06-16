@@ -7,3 +7,7 @@
 C:\\nppdf32Log\\debuglog.txt
 .env
 .lein-failures
+.nrepl-port
+latest.dump
+.rspec-local
+.bundle/config
