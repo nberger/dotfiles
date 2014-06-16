@@ -59,6 +59,8 @@ Bundle 'thoughtbot/vim-rspec'
 Bundle 'jpalardy/vim-slime'
 Bundle 'jgdavey/tslime.vim'
 Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-fireplace'
+Bundle 'vim-scripts/paredit.vim'
 
 syntax on
 filetype off
@@ -248,6 +250,14 @@ silent! nnoremap <unique> <silent> <Leader>t :CtrlP<CR>
 " silent! nnoremap <unique> <silent> <Leader>T :CtrlPTag<CR>
 " CtrlP for filetype
 " silent! nnoremap <unique> <silent> <Leader>f :CtrlPFiletype<CR>
+
+au BufRead,BufNewFile *.cljx setf clojure
+
+" Disable Arrow keys in Escape mode
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
 
 " vim-slime
 let g:slime_target = "tmux"
