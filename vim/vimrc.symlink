@@ -56,6 +56,7 @@ Bundle 'vim-scripts/matchit.zip'
 Bundle 'AlexParamonov/vim-ruby-refactoring'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'thoughtbot/vim-rspec'
+Bundle 'jpalardy/vim-slime'
 Bundle 'jgdavey/tslime.vim'
 Bundle 'kien/ctrlp.vim'
 
@@ -247,3 +248,7 @@ silent! nnoremap <unique> <silent> <Leader>t :CtrlP<CR>
 " silent! nnoremap <unique> <silent> <Leader>T :CtrlPTag<CR>
 " CtrlP for filetype
 " silent! nnoremap <unique> <silent> <Leader>f :CtrlPFiletype<CR>
+
+" vim-slime
+let g:slime_target = "tmux"
+let g:slime_paste_file = "$HOME/.slime_paste"
