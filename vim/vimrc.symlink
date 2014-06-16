@@ -51,7 +51,6 @@ Bundle 'tpope/vim-haml'
 Bundle 'slim-template/vim-slim'
 Bundle 'guns/vim-clojure-static'
 Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'AlexParamonov/vim-ruby-refactoring'
 Bundle 'altercation/vim-colors-solarized'
@@ -91,12 +90,6 @@ set autoread    " Auto load file when updated outside vim
 set guifont=Andale\ Mono\ 10
 set number
 
-"highlight Normal    guibg=grey90
-"highlight Cursor    guibg=Green guifg=NONE
-"highlight lCursor   guibg=Cyan guifg=NONE
-"highlight NonText   guibg=grey80
-"highlight Constant  gui=NONE guibg=grey95
-"highlight Special   gui=NONE guibg=grey95
 colorscheme solarized
 
 set mousehide	" Hide the mouse when typing text
@@ -126,10 +119,6 @@ nmap * *zz
 nmap # #zz
 nmap g* g*zz
 nmap g# g#zz
-
-" F2 to turn toggle search highlighting
-map <F2> :set hlsearch!<CR>
-imap <F2> <ESC>:set hlsearch!<CR>a
 
 if has("multi_byte")
   set encoding=utf-8
@@ -161,15 +150,6 @@ map                :WQ :wq
 map                :Wq :wq
 map                :Q :q
 
-" Replace word and paste
-map di Pl"Xdeb
-
-" Source a global configuration file if available
-" XXX Deprecated, please move your changes here in /etc/vim/vimrc
-if filereadable("/etc/vim/vimrc.local")
-  source /etc/vim/vimrc.local
-endif
-
 :set noswapfile
 
 :set guioptions-=T  "remove toolbar
@@ -190,20 +170,12 @@ map <C-u>tf ggO#encoding: utf-8<ESC>`'
 
 "set fdm=syntax
 
-""improve autocomplete menu color
-highlight Pmenu ctermbg=238 ctermfg=black gui=bold guibg=red
-
-" rabl colorizer
-au BufRead,BufNewFile *.rabl setf ruby
-
 nnoremap <F1> <nop>
 nnoremap Q <nop>
 nnoremap K <nop>
 
 " global substitute by default
 set gdefault
-
-colorscheme desert
 
 let g:rbpt_colorpairs = [
     \ ['brown',       'RoyalBlue3'],
