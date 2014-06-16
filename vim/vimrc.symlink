@@ -11,7 +11,7 @@
 runtime! debian.vim
 
 " Leader
-let mapleader = " "
+let mapleader = "-"
 
 " Uncomment the next line to make Vim more Vi-compatible
 " NOTE: debian.vim sets 'nocompatible'.  Setting 'compatible' changes numerous
