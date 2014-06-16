@@ -207,7 +207,7 @@ map <Leader>a :call RunAllSpecs()<CR>
 autocmd! bufwritepost .vimrc source %
 
 " CtrlP familiar to Command-T
-silent! nnoremap <unique> <silent> <Leader>t :CtrlP<CR>
+silent! nnoremap <unique> <silent> <Leader>t :CtrlPMixed<CR>
 
 " CtrlP for buffers
 " silent! nnoremap <unique> <silent> <Leader>b :CtrlPBuffer<CR>
