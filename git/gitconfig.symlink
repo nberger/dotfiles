@@ -42,3 +42,6 @@
 	autosetuprebase = always
 [web]
 	browser = google-chrome
+[status]
+	short = 1
+	branch = 1
