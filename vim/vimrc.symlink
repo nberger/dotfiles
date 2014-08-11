@@ -195,7 +195,7 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
-let g:rspec_command = 'call Send_to_Tmux("zeus rspec {spec}\n")'
+let g:rspec_command = 'call Send_to_Tmux("b rspec {spec}\n")'
 
 " vim-rspec mappings
 map <Leader>c :call RunCurrentSpecFile()<CR>
