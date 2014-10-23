@@ -54,7 +54,7 @@ Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'AlexParamonov/vim-ruby-refactoring'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'thoughtbot/vim-rspec'
+Bundle 'gabebw/vim-spec-runner'
 Bundle 'jpalardy/vim-slime'
 Bundle 'jgdavey/tslime.vim'
 Bundle 'kien/ctrlp.vim'
@@ -195,13 +195,13 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
-let g:rspec_command = 'call Send_to_Tmux("b rspec {spec}\n")'
+let g:spec_runner_dispatcher = 'call Send_to_Tmux("{command}\n")'
 
 " vim-rspec mappings
-map <Leader>c :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
+map <Leader>c <Plug>RunCurrentSpecFile
+map <Leader>s <Plug>RunFocusedSpec
+map <Leader>l <Plug>RunMostRecentSpec
+map <Leader>a <Plug>RunAllSpecs
 
 " auto-source .vimrc
 autocmd! bufwritepost .vimrc source %
