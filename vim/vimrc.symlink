@@ -38,26 +38,29 @@ Bundle 'gmarik/vundle'
 
 " My Bundles here:
 "
-" original repos on github
 Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-bundler'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'gregsexton/gitv'
-Bundle 'tpope/vim-rails'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-haml'
 Bundle 'slim-template/vim-slim'
-Bundle 'guns/vim-clojure-static'
-Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'vim-scripts/matchit.zip'
-Bundle 'AlexParamonov/vim-ruby-refactoring'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'kien/ctrlp.vim'
+
+" ruby
+Bundle 'tpope/vim-bundler'
+Bundle 'tpope/vim-rails'
 Bundle 'gabebw/vim-spec-runner'
 Bundle 'jpalardy/vim-slime'
 Bundle 'jgdavey/tslime.vim'
-Bundle 'kien/ctrlp.vim'
+Bundle 'AlexParamonov/vim-ruby-refactoring'
+
+" clojure
+Bundle 'guns/vim-clojure-static'
+Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'tpope/vim-fireplace'
 Bundle 'vim-scripts/paredit.vim'
 
