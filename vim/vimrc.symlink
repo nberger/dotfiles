@@ -239,3 +239,6 @@ let g:slime_paste_file = "$HOME/.slime_paste"
 "
 let g:pymode_folding = 0
 let g:pymode_rope = 0
+let g:pymode_options_max_line_length = 120
+let g:pymode_lint_options_pep8 =
+  \ {'ignore': 'E302'}
