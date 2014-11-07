@@ -1,0 +1,9 @@
+[extensions]
+color =
+progress =
+
+[ui]
+username = Nicolás Berger <nicoberger@gmail.com>
+
+[merge-tools]
+meld.args = $base $local $other
