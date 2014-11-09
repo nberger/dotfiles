@@ -62,6 +62,8 @@ Bundle 'AlexParamonov/vim-ruby-refactoring'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'tpope/vim-fireplace'
 Bundle 'vim-scripts/paredit.vim'
+Bundle 'tpope/vim-leiningen'
+Bundle 'tpope/vim-projectionist'
 
 " python
 Bundle 'klen/python-mode'
