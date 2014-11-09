@@ -59,7 +59,6 @@ Bundle 'jgdavey/tslime.vim'
 Bundle 'AlexParamonov/vim-ruby-refactoring'
 
 " clojure
-Bundle 'guns/vim-clojure-static'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'tpope/vim-fireplace'
 Bundle 'vim-scripts/paredit.vim'
