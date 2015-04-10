@@ -68,6 +68,7 @@ Bundle 'tpope/vim-projectionist'
 " python
 Bundle 'klen/python-mode'
 Bundle 'davidhalter/jedi-vim'
+Bundle 'mindriot101/vim-pytest-runner'
 
 syntax on
 filetype off
@@ -203,14 +204,6 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
-let g:spec_runner_dispatcher = 'call Send_to_Tmux("{command}\n")'
-
-" vim-rspec mappings
-map <Leader>c <Plug>RunCurrentSpecFile
-map <Leader>s <Plug>RunFocusedSpec
-map <Leader>l <Plug>RunMostRecentSpec
-map <Leader>a <Plug>RunAllSpecs
-
 " auto-source .vimrc
 autocmd! bufwritepost .vimrc source %
 
@@ -235,11 +228,3 @@ map <right> <nop>
 " vim-slime
 let g:slime_target = "tmux"
 let g:slime_paste_file = "$HOME/.slime_paste"
-
-" python-mode
-"
-let g:pymode_folding = 0
-let g:pymode_rope = 0
-let g:pymode_options_max_line_length = 120
-let g:pymode_lint_options_pep8 =
-  \ {'ignore': 'E302'}
