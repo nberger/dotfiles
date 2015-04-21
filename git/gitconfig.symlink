@@ -45,3 +45,5 @@
 [status]
 	short = 1
 	branch = 1
+[diff]
+	noprefix = true
