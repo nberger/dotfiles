@@ -65,6 +65,7 @@ Bundle 'tpope/vim-fireplace'
 Bundle 'vim-scripts/paredit.vim'
 Bundle 'tpope/vim-leiningen'
 Bundle 'tpope/vim-projectionist'
+Bundle 'guns/vim-clojure-static'
 Bundle 'guns/vim-slamhound'
 
 " python
