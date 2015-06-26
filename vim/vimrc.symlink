@@ -49,6 +49,7 @@ Bundle 'slim-template/vim-slim'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'kien/ctrlp.vim'
+Bundle 'bling/vim-airline'
 
 " ruby
 Bundle 'tpope/vim-bundler'
