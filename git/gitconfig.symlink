@@ -47,4 +47,4 @@
 	short = 1
 	branch = 1
 [diff]
-	noprefix = true
+	noprefix = false
