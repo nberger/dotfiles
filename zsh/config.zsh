@@ -35,7 +35,8 @@ setopt HIST_REDUCE_BLANKS
 
 # don't expand aliases _before_ completion has finished
 #   like: git comm-[tab]
-setopt complete_aliases
+# COMMENTED OUT FOR HUB AUTOCOMPLETE TO WORK
+# setopt complete_aliases
 
 zle -N newtab
 
