@@ -20,6 +20,7 @@
         wdiff   = diff --color-words
         delete-local-merged = !$ZSH/bin/git-delete-local-merged
         no-merged = branch --no-merged
+        wip = commit -a -m wip
 [color]
         diff = auto
         status = auto
