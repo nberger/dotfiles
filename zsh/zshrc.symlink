@@ -19,7 +19,10 @@ autoload -U compinit
 compinit
 
 # load every completion after autocomplete loads
-for config_file ($ZSH/**/completion.sh) source $config_file
+if (){ setopt localoptions nonomatch nocshnullglob; [ -f $ZSH/**/completion.sh([1]) ] }
+then
+  for config_file ($ZSH/**/completion.sh) source $config_file
+fi
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
