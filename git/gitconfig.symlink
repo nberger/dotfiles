@@ -48,3 +48,5 @@
 	branch = 1
 [diff]
 	noprefix = false
+[pull]
+	ff = only
