@@ -3,6 +3,7 @@
                        [slamhound "1.5.5"]]
         :injections [(require 'pjstadig.humane-test-output)
                      (pjstadig.humane-test-output/activate!)]
+        :jvm-opts ["-Xmx512m" "-server"]
 
         :plugins [
                   [lein-kibit "0.1.2"]
