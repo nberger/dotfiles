@@ -10,6 +10,7 @@
                   [lein-try "0.4.3"]
                   [cider/cider-nrepl "0.8.2"]
                   [lein-ancient "0.6.7"]
+                  [lein-plz "0.4.0-SNAPSHOT" :exclusions [[rewrite-clj] [ancient-clj]]]
                   [lein-pprint "1.1.1"]]}
  :lib-dev {
            :gsub-version/files #{"README.md"}
