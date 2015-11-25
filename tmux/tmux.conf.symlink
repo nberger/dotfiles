@@ -9,7 +9,7 @@ bind-key a send-prefix # for nested tmux sessions
 # Global options
 ############################################################################
 # large history
-set-option -g history-limit 10000
+set-option -g history-limit 30000
 
 # colors
 setw -g mode-bg black
@@ -31,10 +31,7 @@ bind | split-window -h
 bind '-' split-window -v
 
 # use mouse
-setw -g mode-mouse on
-setw -g mouse-resize-pane on
-setw -g mouse-select-pane on
-setw -g mouse-select-window on
+setw -g mouse on
 
 # utf8 support
 set-window-option -g utf8 on
