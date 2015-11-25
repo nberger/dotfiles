@@ -60,3 +60,7 @@ setw -g mode-keys vi
 
 # renumber windows when one is closed
 set-option -g renumber-windows on
+
+# Battery indicator
+set -g status-right '#(~/bin/tmux_battery_charge_indicator.sh)'
+set -g status-utf8 on
