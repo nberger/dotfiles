@@ -220,6 +220,10 @@ silent! nnoremap <unique> <silent> <Leader>t :CtrlPMixed<CR>
 " CtrlP for filetype
 " silent! nnoremap <unique> <silent> <Leader>f :CtrlPFiletype<CR>
 
+" Ignore out and build directories
+
+set wildignore+=*/out/*,*/build/*
+
 au BufRead,BufNewFile *.cljx setf clojure
 
 " Disable Arrow keys in Escape mode
