@@ -18,10 +18,6 @@ let mapleader = "-"
 " options, so any other options should be set AFTER setting 'compatible'.
 set nocompatible
 
-" If using a dark background within the editing area and syntax highlighting
-" turn on this option as well
-set background=dark
-
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
 if has("autocmd")
@@ -102,7 +98,8 @@ set autoread    " Auto load file when updated outside vim
 set guifont=Andale\ Mono\ 10
 set number
 
-colorscheme solarized
+set background=dark
+colorscheme desert256
 
 set mousehide	" Hide the mouse when typing text
 set noerrorbells
