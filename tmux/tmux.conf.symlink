@@ -20,7 +20,8 @@ set-option -g pane-active-border-fg green
 setw -g automatic-rename
 
 set -g base-index 1
-#set -s escape-time 0
+# escape-time 0 for spacemacs
+set -sg escape-time 0
 setw -g aggressive-resize on
 
 # Highlight active window
