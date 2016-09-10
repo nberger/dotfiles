@@ -45,7 +45,7 @@ values."
    ;; configuration in `dotspacemacs/config'.
    dotspacemacs-additional-packages '()
    ;; A list of packages and/or extensions that will not be install and loaded.
-   dotspacemacs-excluded-packages '()
+   dotspacemacs-excluded-packages '(paredit)
    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
    ;; are declared in a layer which is not a member of
    ;; the list `dotspacemacs-configuration-layers'. (default t)
@@ -198,7 +198,6 @@ user code."
   (setq-default evil-want-fine-undo nil)
   )
 
-(setq x-alt-keysym 'meta)
 
 (defun dotspacemacs/user-config ()
   "Configuration function for user code.
@@ -213,6 +212,12 @@ layers configuration. You are free to put any user code."
   ;; Also in visual mode
   (define-key evil-visual-state-map "j" 'evil-next-visual-line)
   (define-key evil-visual-state-map "k" 'evil-previous-visual-line)
+
+  ;; Set escape keybinding to "jk"
+  (setq-default evil-escape-key-sequence "jk")
+
+  ;;(setq-default x-alt-keysym 'meta)
+
   ;; clojure mode config
   ;; (require 'clojure-mode-extra-font-locking)
   ;; (add-hook 'clojure-mode-hook #'smartparens-strict-mode)
