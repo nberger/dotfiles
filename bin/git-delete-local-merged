@@ -5,4 +5,11 @@
 #
 #   https://plus.google.com/115587336092124934674/posts/dXsagsvLakJ
 
-git branch --merged | grep -v '^*' | grep -v 'master' | grep -v '^staging' | tr -d '\n' | xargs -r git branch -d
+if [[ `uname` == 'Darwin' ]]
+then
+  git branch --merged | grep -v '^*' | grep -v 'master' | grep -v '^staging' | \
+    xargs git branch -d
+else
+  git branch --merged | grep -v '^*' | grep -v 'master' | grep -v '^staging' | \
+    xargs -r git branch -d
+fi
