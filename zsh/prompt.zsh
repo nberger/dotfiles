@@ -77,9 +77,13 @@ directory_name(){
   echo "%{$fg_bold[cyan]%}%3/%\/%{$reset_color%}"
 }
 
+my_hostname(){
+  echo "%{$fg[yellow]%}$(hostname)%{$reset_color%}"
+}
+
 export PROMPT=$'\n$(directory_name) $(git_dirty)$(need_push)\n› '
 set_prompt () {
-  export RPROMPT="%{$fg_bold[cyan]%}$(todo)%{$reset_color%}"
+  export RPROMPT="$(my_hostname)"
 }
 
 precmd() {
