@@ -1,4 +1,3 @@
-envwrapper=`which virtualenvwrapper.sh`
-if [ ! -z $envwrapper ]; then
-  source $envwrapper
+if which "virtualenvwrapper.sh" > /dev/null 2>&1 ; then
+  source `which virtualenvwrapper.sh`
 fi
