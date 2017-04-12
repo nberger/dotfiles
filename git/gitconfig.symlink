@@ -33,6 +33,7 @@
   user = nberger
 [mergetool]
   keepBackup = false
+  prompt = false
 [rerere]
   enabled = 1
 [rebase]
@@ -52,3 +53,6 @@
   noprefix = false
 [pull]
   ff = only
+[merge]
+  tool = vimdiff
+  conflictstyle = diff3
