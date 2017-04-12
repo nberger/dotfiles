@@ -81,9 +81,13 @@ my_hostname(){
   echo "%{$fg[yellow]%}$(hostname)%{$reset_color%}"
 }
 
+last_command_status(){
+  echo "%{%0(?,$fg_bold[green],$fg_bold[red])%}%?%{$reset_color%}"
+}
+
 export PROMPT=$'\n$(directory_name) $(git_dirty)$(need_push)\n› '
 set_prompt () {
-  export RPROMPT="$(my_hostname)"
+  export RPROMPT="$(last_command_status) $(my_hostname)"
 }
 
 precmd() {
