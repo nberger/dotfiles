@@ -35,6 +35,8 @@
         keepBackup = false
 [rerere]
 	enabled = 1
+[rebase]
+  autostash = 1
 [push]
 	default = tracking
 [help]
