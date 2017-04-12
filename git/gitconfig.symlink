@@ -8,47 +8,47 @@
 # install this to the correct location by running the project's main `rake`
 # task.
 [user]
-        name = Nicolas Berger
-        email = nicoberger@gmail.com
+  name = Nicolas Berger
+  email = nicoberger@gmail.com
 [alias]
-        co = checkout
-        promote = !$ZSH/bin/git-promote
-        wtf     = !$ZSH/bin/git-wtf
-        rank-contributers = !$ZSH/bin/git-rank-contributers
-        count   = !git shortlog -sn
-        unstage = reset HEAD
-        wdiff   = diff --color-words
-        delete-local-merged = !$ZSH/bin/git-delete-local-merged
-        no-merged = branch --no-merged
-        wip = commit -a -m wip
+  co = checkout
+  promote = !$ZSH/bin/git-promote
+  wtf     = !$ZSH/bin/git-wtf
+  rank-contributers = !$ZSH/bin/git-rank-contributers
+  count   = !git shortlog -sn
+  unstage = reset HEAD
+  wdiff   = diff --color-words
+  delete-local-merged = !$ZSH/bin/git-delete-local-merged
+  no-merged = branch --no-merged
+  wip = commit -a -m wip
 [color]
-        diff = auto
-        status = auto
-        branch = auto
-        ui = auto
+  diff = auto
+  status = auto
+  branch = auto
+  ui = auto
 [core]
-        excludesfile = ~/.gitignore
-        editor = vim
+  excludesfile = ~/.gitignore
+  editor = vim
 [github]
-        user = nberger
+  user = nberger
 [mergetool]
-        keepBackup = false
+  keepBackup = false
 [rerere]
-	enabled = 1
+  enabled = 1
 [rebase]
   autostash = 1
 [push]
-	default = tracking
+  default = tracking
 [help]
-	autocorrect = 1
+  autocorrect = 1
 [branch]
-	autosetuprebase = always
+  autosetuprebase = always
 [web]
-	browser = google-chrome
+  browser = google-chrome
 [status]
-	short = 1
-	branch = 1
+  short = 1
+  branch = 1
 [diff]
-	noprefix = false
+  noprefix = false
 [pull]
-	ff = only
+  ff = only
