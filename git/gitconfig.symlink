@@ -32,7 +32,8 @@
 [github]
         user = nberger
 [mergetool]
-        keepBackup = false
+  keepBackup = false
+  prompt = false
 [rerere]
 	enabled = 1
 [rebase]
@@ -50,5 +51,16 @@
 	branch = 1
 [diff]
 	noprefix = false
+  tool = meld
 [pull]
 	ff = only
+[difftool]
+  prompt = false
+[difftool "meld"]
+  trustExitCode = true
+  cmd = open -W -a Meld --args \"$LOCAL\" \"$PWD/$REMOTE\"
+[merge]
+  tool = meld
+[mergetool "meld"]
+  trustExitCode = true
+  cmd = open -W -a Meld --args --auto-merge \"$PWD/$LOCAL\" \"$PWD/$BASE\" \"$PWD/$REMOTE\" --output=\"$PWD/$MERGED\"
