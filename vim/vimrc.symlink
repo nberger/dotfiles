@@ -104,6 +104,10 @@ colorscheme desert256
 set mousehide	" Hide the mouse when typing text
 set noerrorbells
 set novisualbell
+set vb t_vb=
+
+" force disable bell, some issue with GVIM or (http://stackoverflow.com/a/18589653)
+autocmd GUIEnter * set vb t_vb=
 
 set expandtab
 set shiftwidth=2
