@@ -7,7 +7,9 @@
 C:\\nppdf32Log\\debuglog.txt
 .env
 .lein-failures
+.lein-repl-history
 .nrepl-port
+.cljs_rhino_repl
 latest.dump
 .rspec-local
 .bundle/config
