@@ -234,7 +234,7 @@ silent! nnoremap <unique> <silent> <Leader>t :CtrlPMixed<CR>
 
 " Ignore out and build directories
 
-set wildignore+=*/out/*,*/build/*,*/target/*
+set wildignore+=*/out/*,*/build/*,/target/*
 
 au BufRead,BufNewFile *.cljx setf clojure
 
