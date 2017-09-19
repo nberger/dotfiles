@@ -189,7 +189,7 @@ map <C-u>tf ggO#encoding: utf-8<ESC>`'
 
 nnoremap <F1> <nop>
 nnoremap Q <nop>
-nnoremap K <nop>
+"nnoremap K <nop>
 
 " global substitute by default
 set gdefault
