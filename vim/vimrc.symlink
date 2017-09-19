@@ -69,6 +69,13 @@ Bundle 'klen/python-mode'
 "Bundle 'davidhalter/jedi-vim'
 Bundle 'mindriot101/vim-pytest-runner'
 
+" solidity
+Bundle 'tomlion/vim-solidity'
+
+" js
+Bundle 'pangloss/vim-javascript'
+Bundle 'mxw/vim-jsx'
+
 syntax on
 filetype off
 
