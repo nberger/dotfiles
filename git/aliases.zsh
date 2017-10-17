@@ -8,7 +8,7 @@ fi
 
 # The rest of my fun git aliases
 alias g='git'
-alias gl='git log --graph --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"'
+alias gl='git log --graph --pretty="format:%C(yellow)%h%Cgreen%d%Creset %s %C(white) %an, %ar%Creset"'
 alias gpr='git pull --rebase'
 alias gd='git diff'
 alias gc='git commit'
