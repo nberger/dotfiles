@@ -35,6 +35,7 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rhubarb'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'gregsexton/gitv'
 Bundle 'scrooloose/nerdtree'
