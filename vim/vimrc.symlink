@@ -44,8 +44,8 @@ Bundle 'tpope/vim-haml'
 Bundle 'slim-template/vim-slim'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'ctrlpvim/ctrlp.vim'
 Bundle 'bling/vim-airline'
+Bundle 'junegunn/fzf.vim'
 
 " ruby
 Bundle 'tpope/vim-bundler'
@@ -204,15 +204,12 @@ set gdefault
 " auto-source .vimrc
 autocmd! bufwritepost .vimrc source %
 
-" CtrlP familiar to Command-T
-silent! nnoremap <unique> <silent> <Leader>t :CtrlPMixed<CR>
+" Add fzf to runtime path
+set rtp+=/usr/local/opt/fzf
 
-" CtrlP for buffers
-" silent! nnoremap <unique> <silent> <Leader>b :CtrlPBuffer<CR>
-" CtrlP for tags
-" silent! nnoremap <unique> <silent> <Leader>T :CtrlPTag<CR>
-" CtrlP for filetype
-" silent! nnoremap <unique> <silent> <Leader>f :CtrlPFiletype<CR>
+" use fzf for files and buffers
+silent! nnoremap <unique> <silent> <Leader>t :Files<CR>
+silent! nnoremap <unique> <silent> ; :Buffers<CR>
 
 " Ignore out and build directories
 
