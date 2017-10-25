@@ -5,4 +5,3 @@ map <Leader>c <Plug>RunCurrentSpecFile
 map <Leader>s <Plug>RunFocusedSpec
 map <Leader>l <Plug>RunMostRecentSpec
 map <Leader>a <Plug>RunAllSpecs
-
