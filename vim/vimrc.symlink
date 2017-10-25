@@ -47,6 +47,7 @@ Bundle 'vim-scripts/matchit.zip'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'bling/vim-airline'
 Bundle 'junegunn/fzf.vim'
+Bundle 'tpope/vim-commentary'
 
 " ruby
 Bundle 'tpope/vim-bundler'
