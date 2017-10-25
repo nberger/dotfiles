@@ -191,9 +191,6 @@ set wildmenu
 " clean whitespaces at end of line
 map cleanws :%s/\s\+$//g<CR>
 
-" insert encoding: utf-8 at beginning of file
-map <C-u>tf ggO#encoding: utf-8<ESC>`'
-
 "set fdm=syntax
 
 nnoremap <F1> <nop>
@@ -216,10 +213,6 @@ endif
 " use fzf for files and buffers
 silent! nnoremap <unique> <silent> <Leader>t :Files<CR>
 silent! nnoremap <unique> <silent> ; :Buffers<CR>
-
-" Ignore out and build directories
-
-set wildignore+=*/out/*,*/build/*,/target/*
 
 " Disable Arrow keys in Escape mode
 map <up> <nop>
