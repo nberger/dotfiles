@@ -206,7 +206,11 @@ set gdefault
 autocmd! bufwritepost .vimrc source %
 
 " Add fzf to runtime path
-set rtp+=/usr/local/opt/fzf
+if filereadable("/usr/local/opt/fzf")
+  set rtp+=/usr/local/opt/fzf
+else
+  set rtp+=~/.fzf
+endif
 
 " use fzf for files and buffers
 silent! nnoremap <unique> <silent> <Leader>t :Files<CR>
