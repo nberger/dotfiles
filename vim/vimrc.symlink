@@ -36,26 +36,16 @@ Bundle 'VundleVim/Vundle.vim'
 "
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rhubarb'
-Bundle 'kchmck/vim-coffee-script'
 Bundle 'gregsexton/gitv'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-haml'
-Bundle 'slim-template/vim-slim'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'bling/vim-airline'
 Bundle 'junegunn/fzf.vim'
 Bundle 'tpope/vim-commentary'
-
-" ruby
-Bundle 'tpope/vim-bundler'
-Bundle 'tpope/vim-rails'
-Bundle 'gabebw/vim-spec-runner'
-Bundle 'jpalardy/vim-slime'
-Bundle 'jgdavey/tslime.vim'
-Bundle 'AlexParamonov/vim-ruby-refactoring'
 
 " clojure
 Bundle 'kien/rainbow_parentheses.vim'
@@ -64,15 +54,12 @@ Bundle 'vim-scripts/paredit.vim'
 "Bundle 'tpope/vim-leiningen'
 Bundle 'tpope/vim-projectionist'
 Bundle 'guns/vim-clojure-static'
-Bundle 'guns/vim-slamhound'
+"Bundle 'guns/vim-slamhound'
 
 " python
 Bundle 'klen/python-mode'
 "Bundle 'davidhalter/jedi-vim'
-Bundle 'mindriot101/vim-pytest-runner'
-
-" solidity
-Bundle 'tomlion/vim-solidity'
+"Bundle 'mindriot101/vim-pytest-runner'
 
 " js
 Bundle 'pangloss/vim-javascript'
