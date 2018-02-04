@@ -56,6 +56,10 @@ Bundle 'tpope/vim-projectionist'
 Bundle 'guns/vim-clojure-static'
 "Bundle 'guns/vim-slamhound'
 
+" haskell
+"Bundle 'neovimhaskell/haskell-vim'
+Bundle 'begriffs/haskell-vim-now'
+
 " python
 Bundle 'klen/python-mode'
 "Bundle 'davidhalter/jedi-vim'
