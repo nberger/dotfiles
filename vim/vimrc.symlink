@@ -44,6 +44,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'junegunn/fzf.vim'
 Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-repeat'
 
 " clojure
 Plugin 'luochen1990/rainbow'
