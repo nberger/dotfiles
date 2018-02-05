@@ -48,7 +48,7 @@ Bundle 'junegunn/fzf.vim'
 Bundle 'tpope/vim-commentary'
 
 " clojure
-Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'luochen1990/rainbow'
 Bundle 'tpope/vim-fireplace'
 Bundle 'vim-scripts/paredit.vim'
 "Bundle 'tpope/vim-leiningen'
@@ -215,3 +215,12 @@ map <right> <nop>
 " vim-slime
 let g:slime_target = "tmux"
 let g:slime_paste_file = "$HOME/.slime_paste"
+
+" rainbow parens
+let g:rainbow_active = 1
+
+let g:rainbow_conf = {
+	\	'ctermfgs': ['darkgray'],
+	\	'operators': '_,_',
+	\	'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
+	\}
