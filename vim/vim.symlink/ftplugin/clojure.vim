@@ -43,3 +43,5 @@
 " au Syntax clojure RainbowParenthesesLoadBraces
 
 setlocal lispwords+=this-as,when-let
+
+setlocal foldnestmax=1
