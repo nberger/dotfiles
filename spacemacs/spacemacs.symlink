@@ -254,11 +254,12 @@ you should place your code here."
   (setq cider-test-infer-test-ns (lambda (ns) ns))
 
   ;; match paredit.vim key-binding
-  (define-key evil-normal-state-map "-W" " kw")  ; wrap with ()
+  (define-key evil-normal-state-map "-W" ; wrap with ()
+    (lambda (&optional arg) (interactive "P") (sp-wrap-with-pair "(") (evil-lisp-state/quit)))
   (define-key evil-normal-state-map "-w["        ; wrap with []
-    (lambda (&optional arg) (interactive "P") (sp-wrap-with-pair "[")))
+    (lambda (&optional arg) (interactive "P") (sp-wrap-with-pair "[") (evil-lisp-state/quit)))
   (define-key evil-normal-state-map "-w{"        ; wrap with {}
-    (lambda (&optional arg) (interactive "P") (sp-wrap-with-pair "{")))
+    (lambda (&optional arg) (interactive "P") (sp-wrap-with-pair "{") (evil-lisp-state/quit)))
   (define-key evil-normal-state-map "-S" " kW")  ; splice, i.e unwrap an sexp
   (define-key evil-normal-state-map "-J" " kJ")  ; join two sexps
   (define-key evil-normal-state-map "-O" 'sp-split-sexp) ; split an sexp
