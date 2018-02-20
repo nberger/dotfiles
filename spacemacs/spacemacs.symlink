@@ -261,15 +261,15 @@ you should place your code here."
     (lambda (&optional arg) (interactive "P") (sp-wrap-with-pair "[") (evil-lisp-state/quit)))
   (define-key evil-normal-state-map "-w{"        ; wrap with {}
     (lambda (&optional arg) (interactive "P") (sp-wrap-with-pair "{") (evil-lisp-state/quit)))
-  (define-key evil-normal-state-map "-S" " kW")  ; splice, i.e unwrap an sexp
-  (define-key evil-normal-state-map "-J" " kJ")  ; join two sexps
+  (define-key evil-normal-state-map "-S" 'sp-unwrap-sexp)  ; splice, i.e unwrap an sexp
+  (define-key evil-normal-state-map "-J" 'sp-join-sexp) ; join two sexps
   (define-key evil-normal-state-map "-O" 'sp-split-sexp) ; split an sexp
-  (define-key evil-normal-state-map "-I" " kr")  ; raise current symbol
-  (define-key evil-normal-state-map (kbd "- <up>") " kE") ; splice kill backward
-  (define-key evil-normal-state-map (kbd "- <down>") " ke") ; forward
+  (define-key evil-normal-state-map "-I" 'sp-raise-sexp) ; raise current symbol
+  ;(define-key evil-normal-state-map (kbd "- <up>") " kE") ; splice kill backward
+  ;(define-key evil-normal-state-map (kbd "- <down>") " ke") ; forward
   ;; These are different from vim, here cursor should NOT be on delimits
-  (define-key evil-normal-state-map "->" " ks")  ; forward slurp
-  (define-key evil-normal-state-map "-<" " kS")  ; backward slurp
+  (define-key evil-normal-state-map "->" 'sp-forward-slurp-sexp)  ; forward slurp
+  (define-key evil-normal-state-map "-<" 'sp-backward-slurp-sexp) ; backward slurp
   )
 
 ;; better clipboard support using xclip (works in Arch, at least)
