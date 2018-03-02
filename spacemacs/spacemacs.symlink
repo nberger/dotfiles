@@ -254,6 +254,10 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (setq cider-test-infer-test-ns (lambda (ns) ns))
 
+  ;; open links on chrome
+  (setq browse-url-browser-function 'browse-url-generic
+        browse-url-generic-program "google-chrome-stable")
+
   ;; do not create .#... lock files
   (setq create-lockfiles nil)
 
