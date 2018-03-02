@@ -273,6 +273,8 @@ you should place your code here."
   ;; These are different from vim, here cursor should NOT be on delimits
   (define-key evil-normal-state-map "->" 'sp-forward-slurp-sexp)  ; forward slurp
   (define-key evil-normal-state-map "-<" 'sp-backward-slurp-sexp) ; backward slurp
+
+  (spacemacs/toggle-indent-guide-globally-on)
   )
 
 ;; better clipboard support using xclip (works in Arch, at least)
