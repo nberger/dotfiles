@@ -19,7 +19,7 @@
   unstage = reset HEAD
   wdiff   = diff --color-words
   delete-local-merged = !$ZSH/bin/git-delete-local-merged
-  no-merged = branch --no-merged
+  no-merged = branch --sort=committerdate --no-merged
   wip = commit -a -m wip
 [color]
   diff = auto
