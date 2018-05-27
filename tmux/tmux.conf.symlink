@@ -34,9 +34,6 @@ bind '-' split-window -v
 # use mouse
 setw -g mouse on
 
-# utf8 support
-set-window-option -g utf8 on
-
 # reload tmux conf
 bind-key r source-file ~/.tmux.conf
 
