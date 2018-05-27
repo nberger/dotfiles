@@ -64,3 +64,8 @@ set-option -g renumber-windows on
 
 # Battery indicator
 set -g status-right '#(~/bin/tmux_battery_charge_indicator.sh)'
+
+# Use vim keybindings in copy mode
+setw -g mode-keys vi
+
+if-shell "uname | grep -q Darwin" "source-file ~/.tmux-osx.conf"

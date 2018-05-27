@@ -1,0 +1,10 @@
+# Setup 'v' to begin selection as in Vim
+bind-key -T copy-mode-vi v send -X begin-selection
+bind-key -T copy-mode-vi y send -X copy-pipe-and-cancel "pbcopy"
+
+# Update default binding of `Enter` to also use copy-pipe
+unbind-key -T copy-mode-vi Enter
+bind-key -T copy-mode-vi Enter send -X copy-pipe-and-cancel "pbcopy"
+
+# Bind ']' to use pbpaste
+bind ] run "pbpaste | tmux load-buffer - && tmux paste-buffer"
