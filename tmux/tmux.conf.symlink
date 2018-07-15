@@ -65,4 +65,7 @@ set -g status-right '#(~/bin/tmux_battery_charge_indicator.sh)'
 # Use vim keybindings in copy mode
 setw -g mode-keys vi
 
-if-shell "uname | grep -q Darwin" "source-file ~/.tmux-osx.conf"
+set -g @plugin 'tmux-plugins/tmp'
+set -g @plugin 'tmux-plugins/tmux-yank'
+
+run '~/.tmux/plugins/tpm/tpm'
